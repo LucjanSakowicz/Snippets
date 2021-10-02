@@ -562,11 +562,48 @@ Navbar
 }
 
 /*error*/
-.error-page{
+.error-page {
     text-align: center;
     padding-top: 5rem;
 }
 
-.error-page h1{
+.error-page h1 {
     font-size: 9rem;
+}
+
+/*about*/
+
+.about-page h2 {
+    /*The text-transform property controls the capitalization of text.*/
+    text-transform: none;
+    font-weight: bold;
+}
+
+.about-page {
+    display: grid;
+    /*2 row 4 column*/
+    gap: 2rem 4rem;
+}
+
+.about-img {
+    /*The border-radius property defines the radius of the element's corners.*/
+    border-radius: var(--borderRadius);
+    height: 300px;
+}
+
+@media screen and (min-width: 992px) {
+    .about-page {
+        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: 400px;
+        align-items: center;
+    }
+
+    .about-img {
+        height: 100%;
+    }
+}
+
+
+.featured-title {
+    text-align: center;
 }
