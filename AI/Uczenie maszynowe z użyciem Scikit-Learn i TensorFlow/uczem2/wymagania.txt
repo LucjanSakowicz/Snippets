@@ -1,0 +1,91 @@
+# Znacznie łatwiej zainstalować moduł TensorFlow za pomocą Anacondy, zwłaszcza
+# na systemie Windows lub podczas korzystania z procesora graficznego. Instrukcję
+# instalacji znajdziesz w pliku INSTALACJA.md
+
+##### Podstawowe pakiety naukowe
+jupyter==1.0.0
+matplotlib==3.1.2
+numpy==1.17.3
+pandas==0.25.3
+scipy==1.3.1
+
+
+##### Pakiety uczenia maszynowego
+scikit-learn==0.22
+
+# Dodatkowo: Biblioteka XGBoost jest używana jedynie w rozdziale 7.
+xgboost==0.90
+
+##### Pakiety związane z modułem TensorFlow
+
+# Jeżeli masz kartę graficzną zgodną z modułem TF i chcesz włączyć jej obsługę, to
+# zastąp bibliotekę tensorflow biblioteką tensorflow-gpu, a także bibliotekę tensorflow-serving-api
+# biblioteką tensorflow-serving-api-gpu.
+# Twoja karta graficzna musi zawierać funkcję CUDA Compute Capability 3.5 lub nowszą, a do
+# tego musisz zainstalować biblioteki CUDA, cuDNN itd.: szczegóły znajdziesz na stronie tensorflow.org.
+
+tensorflow==2.0.1
+#tensorflow-gpu==2.0.0
+
+# Dodatkowo: Interfejs TF Serving jest potrzebny jedynie w rozdziale 19.
+tensorflow-serving-api==2.0.0
+#tensorflow-serving-api-gpu==2.0.0
+
+tensorboard==2.0.0
+tensorflow-datasets==1.3.0
+tensorflow-hub==0.6.0
+tensorflow-probability==0.7
+
+# Dodatkowo: pakiet potrzebny jedynie w rozdziale 13.
+# NIEDOSTĘPNY POD SYSTEM WINDOWS
+tfx==0.15.0
+
+# Dodatkowo: pakiet potrzebny jedynie w rozdziale 16.
+# NIEDOSTĘPNY POD SYSTEM WINDOWS
+tensorflow-addons==0.6.0
+
+##### Biblioteka uczenia przez wzmacnianie (rozdział 18.)
+
+# Istnieje kilka zależności, które trzeba zainstalować w pierwszej kolejności. Zajrzyj pod adres:
+# https://github.com/openai/gym#installing-everything
+gym[atari]==0.15.4
+# Na systemie Windows zainstaluj bibliotekę atari_py za pomocą następującego polecenia:
+# pip install --no-index -f https://github.com/Kojoley/atari-py/releases atari_py
+
+tf-agents==0.3.0rc0
+
+
+##### Przetwarzanie obrazu
+imageio==2.6.1
+Pillow==6.2.1
+scikit-image==0.16.2
+graphviz
+pydot==1.4.1
+opencv-python==4.1.2.30
+pyglet==1.3.2
+
+#pyvirtualdisplay # wymagany w rozdziale 16., jeżeli korzystasz z serwera bezobsługowego
+                  # (np, pozbawionego wyświetlacza, działającego z poziomu środowiska Colab lub jako maszyna wirtualna)
+
+
+##### Dodatkowe narzędzia
+
+# Wydajne realizowanie zadań (korzystanie z pamięci podręcznej, zrównoleglanie, utrwalanie)
+joblib==0.14.0
+
+# Łatwe przesyłanie zapytań http
+requests==2.22.0
+
+# Dobre narzędzie do ukazywania różnic w notatnikach Jupyter.
+nbdime==1.1.0
+
+# Może się przydać w przypadku skomplikowanych klauzul "where" w bibliotece Pandas (zob. samouczek Pandas).
+numexpr==2.7.0
+
+# Dodatkowo: poniższe biblioteki mogą przydać się w rozdziale poświęconym klasyfikacji, w ćwiczeniu 4.
+nltk==3.4.5
+urlextract==0.13.0
+
+# Dodatkowo: biblioteka tqdm wyświetla ładne paski postępu, a ipywidgets umożliwia korzystanie z biblioteki tqdm w notatnikach.
+tqdm==4.40.0
+ipywidgets==7.5.1
