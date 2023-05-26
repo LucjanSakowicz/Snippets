@@ -1,3 +1,3 @@
 # Snippets
 
-Różne tutorial do wykorzystania kiedyś
+Różne tutoriale do wykorzystania kiedyś
